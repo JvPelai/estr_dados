@@ -1,0 +1,22 @@
+- Nos algorítimos de busca, inserção e remoção, no pior caso,
+o número de comparações é proporcional à altura da árvore.
+
+~ buscas são mais eficientes em árvores balanceadas
+e ineficientes em árvores defeneradas, ex: (número de elementos == número de comparações)
+
+Fator de balanceamento:
+ - diferença de altura entre as subárvores da direita e da esquerda.
+ - em árvores AVL, deve ficar entre -1 e 1
+
+
+Se algum nó violar a propriedade do fator de balanceamento após uma inserção ou remoção, uma rotação deve ser feita
+
+Regras para as rotações:
+
+Nó Desbalanceado  | Filho do Nó Desbalanceado  | Tipo de Rotação
+      +2          |           +1               |  Simples à Esquerda 
+      +2          |            0               |  Simples à Esquerda
+      +2          |           -1               |  Dupla com Filho para a Direita e pai para Esquerda
+      -2          |           +1               |  Dupla com Filho para a Esquerda e pai para Direita
+      -2          |            0               |  Simples à Direita  
+      -2          |           -1               |  Simples à Direita  

@@ -1,0 +1,15 @@
+Vantagens e Desvantagens:
+
+1. matrizes de adjacência: alocação de memória no momento da declaração da matriz;
+
+2. Se o grafo for denso(muitas arestas p/ vértice), a *lista de adjacências" ocupa muito espaço na memória;
+
+3. Matrizes de adjacência ocupam o mesmo espaço em grafos esparsos e densos;
+
+4. Buscas são melhores com listas de adjacências, pos temos os adjacentes de um nó;
+
+5. Testar se existe uma aresta é melhor com matrizes;
+
+6 encontrar os predecessores é melhor com matrizes, pois basta olhar a coluna do nó na matriz, no caso de listas, 
+é necessário varrer todas as listas
+
